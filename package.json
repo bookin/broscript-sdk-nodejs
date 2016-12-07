@@ -1,6 +1,6 @@
 {
   "name": "broscript-client",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "BroScript api sdk",
   "main": "./lib/index.js",
   "scripts": {},
