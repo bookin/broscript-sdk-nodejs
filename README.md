@@ -6,8 +6,11 @@
 
 ## Installation
 
-The SDK relies on [Node Package Manager](https://www.npmjs.com/) (NPM) being available to resolve dependencies.
-Once published you will need copy the folder `broscriptlib` in to your `node_modules` folder.
+The SDK relies on [Node Package Manager](https://www.npmjs.com/package/broscript) (NPM) being available to resolve dependencies.
+
+```
+npm i broscript
+```
 
 ## Usage
 
@@ -16,21 +19,22 @@ The following shows how import and use the controller:
 1. Import the module:
 
     ```js
-    var broscriptlib = require('broscriptlib');
+    var broscript= require('broscript');
     ```
 
 2. Configure any authentication parameters. For example:
 
     ```js
-    var config = broscriptlib.configuration;
-    config.apikey = a_secret_key;
+    broscript.config.userKey = user_key;
+    broscript.config.scriptKey = script_key;
     ```
 
-3. Access various controllers by:
+3. Use methods:
 
     ```js
-    var controller = broscriptlib.XYZ;
-    controller.getItems(id, callback);
+    broscript.api.answers(...);
+    broscript.api.templates(...);
+    //...
     ```
 
 
